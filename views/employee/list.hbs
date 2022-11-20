@@ -1,0 +1,23 @@
+<table class="table table-striped table-responsive">
+<thead>
+    <tr>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>City</th>
+        <th></th>
+    </tr>
+</thead>
+<tbody>
+    {{#each list}}
+    <tr>
+        <td>{{this.fullName}}</td>
+        <td>{{this.email}}</td>
+        <td>{{this.mobile}}</td>
+        <td>{{this.city}}</td>
+        <td><a href="{{this.id}}">Edit</a>
+        <a href="delete/{{this.id}}">Delete</a></td>
+    </tr>
+    {{/each}}
+</tbody>
+</table>
